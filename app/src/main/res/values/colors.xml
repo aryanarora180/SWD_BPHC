@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#fd4c4c</color>
+    <color name="colorBackground">#0a0e10</color>
+    <color name="colorSecondaryBackground">#151a21</color>
+
+    <color name="colorTextPrimary">#dee3ea</color>
+    <color name="colorIconsTint">#dee3ea</color>
+    <color name="colorTextSecondary">#b2bdcd</color>
+
+    <color name="colorSignout">#E71D36</color>
+</resources>

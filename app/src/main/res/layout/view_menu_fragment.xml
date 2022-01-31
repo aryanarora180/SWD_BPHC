@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mess_menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/mess_registration_card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_today_header_text">
+
+        <TextView
+            android:id="@+id/day_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Saturday - today" />
+
+        <ImageView
+            android:id="@+id/breakfast_bullet_image"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/day_header_text" />
+
+        <ImageView
+            android:id="@+id/lunch_bullet_image"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/hollow_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast_menu_text" />
+
+        <ImageView
+            android:id="@+id/snacks_bullet_image"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/hollow_circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lunch_menu_text" />
+
+        <ImageView
+            android:id="@+id/dinner_bullet_image"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/circle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/snacks_menu_text" />
+
+        <TextView
+            android:id="@+id/breakfast_header_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/mess_breakfast"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/breakfast_bullet_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/breakfast_bullet_image"
+            app:layout_constraintTop_toTopOf="@+id/breakfast_bullet_image" />
+
+        <TextView
+            android:id="@+id/lunch_header_text8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/mess_lunch"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/lunch_bullet_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/lunch_bullet_image"
+            app:layout_constraintTop_toTopOf="@+id/lunch_bullet_image" />
+
+        <TextView
+            android:id="@+id/snacks_header_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/mess_snacks"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/snacks_bullet_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lunch_menu_text"
+            app:layout_constraintTop_toTopOf="@+id/snacks_bullet_image" />
+
+        <TextView
+            android:id="@+id/dinner_header_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/mess_dinner"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dinner_bullet_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/snacks_menu_text"
+            app:layout_constraintTop_toTopOf="@+id/dinner_bullet_image" />
+
+        <TextView
+            android:id="@+id/breakfast_menu_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorTextSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/breakfast_bullet_image"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast_header_text"
+            tools:text="blah\nblagblah\nblagblah\nblag" />
+
+        <TextView
+            android:id="@+id/lunch_menu_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorTextSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/lunch_header_text8"
+            app:layout_constraintTop_toBottomOf="@+id/lunch_header_text8"
+            tools:text="blah\nblagblah\nblagblah\nblag" />
+
+        <TextView
+            android:id="@+id/snacks_menu_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/colorTextSecondary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/snacks_header_text"
+            app:layout_constraintTop_toBottomOf="@+id/snacks_header_text"
+            tools:text="blah\nblagblah\nblagblah\nblag" />
+
+        <TextView
+            android:id="@+id/dinner_menu_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorTextSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/dinner_header_text"
+            app:layout_constraintTop_toBottomOf="@+id/dinner_header_text"
+            tools:text="blah\nblagblah\nblagblah\nblag" />
+
+        <View
+            android:id="@+id/breakfast_lunch_connector"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/lunch_bullet_image"
+            app:layout_constraintEnd_toEndOf="@+id/breakfast_bullet_image"
+            app:layout_constraintStart_toStartOf="@+id/breakfast_bullet_image"
+            app:layout_constraintTop_toBottomOf="@+id/breakfast_bullet_image" />
+
+        <View
+            android:id="@+id/lunch_snacks_connector"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/snacks_bullet_image"
+            app:layout_constraintEnd_toEndOf="@+id/lunch_bullet_image"
+            app:layout_constraintStart_toStartOf="@+id/lunch_bullet_image"
+            app:layout_constraintTop_toBottomOf="@+id/lunch_bullet_image" />
+
+        <View
+            android:id="@+id/snacks_dinner_connector"
+            android:layout_width="2dp"
+            android:layout_height="0dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintBottom_toTopOf="@+id/dinner_bullet_image"
+            app:layout_constraintEnd_toEndOf="@+id/snacks_bullet_image"
+            app:layout_constraintStart_toStartOf="@+id/snacks_bullet_image"
+            app:layout_constraintTop_toBottomOf="@+id/snacks_bullet_image" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

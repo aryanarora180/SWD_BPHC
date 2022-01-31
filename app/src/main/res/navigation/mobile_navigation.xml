@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/noticesFragment">
+
+    <fragment
+        android:id="@+id/goodiesFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.goodies.GoodiesFragment"
+        android:label="@string/title_goodies"
+        tools:layout="@layout/goodies_fragment">
+        <action
+            android:id="@+id/action_goodiesFragment_to_buyGoodieFragment"
+            app:destination="@id/buyGoodieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messMenuFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.mess.MessMenuFragment"
+        android:label="@string/title_mess"
+        tools:layout="@layout/mess_menu_fragment">
+        <action
+            android:id="@+id/action_messMenuFragment_to_messRegistrationFragment"
+            app:destination="@id/messRegistrationFragment" />
+        <action
+            android:id="@+id/action_messMenuFragment_to_messGraceFragment"
+            app:destination="@id/messGraceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/connectFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.studentconnect.StudentConnectFragment"
+        android:label="@string/title_connect"
+        tools:layout="@layout/student_connect_fragment" />
+    <fragment
+        android:id="@+id/deductionsFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.deductions.DeductionsFragment"
+        android:label="DeductionsFragment"
+        tools:layout="@layout/deductions_fragment">
+        <action
+            android:id="@+id/action_deductionsFragment_to_deductionDetailsFragment"
+            app:destination="@id/deductionDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messRegistrationFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.mess.MessRegistrationFragment"
+        android:label="MessRegistrationFragment"
+        tools:layout="@layout/mess_registration_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/profile_fragment">
+        <argument
+            android:name="needsToComplete"
+            android:defaultValue="false"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyGoodieFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.goodies.BuyGoodieFragment"
+        android:label="BuyGoodieFragment"
+        tools:layout="@layout/buy_goodie_fragment">
+        <argument
+            android:name="GoodieData"
+            app:argType="in.ac.bits_hyderabad.swd.swd.data.Goodie" />
+        <action
+            android:id="@+id/action_buyGoodieFragment_to_viewSalesFragment"
+            app:destination="@id/viewSalesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewSalesFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.goodies.ViewSalesFragment"
+        android:label="ViewSalesFragment"
+        tools:layout="@layout/view_sales_fragment">
+        <argument
+            android:name="goodie"
+            app:argType="in.ac.bits_hyderabad.swd.swd.data.Goodie" />
+    </fragment>
+    <fragment
+        android:id="@+id/messGraceFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.mess.MessGraceFragment"
+        android:label="MessGraceFragment"
+        tools:layout="@layout/mess_grace_fragment" />
+    <fragment
+        android:id="@+id/deductionDetailsFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.deductions.DeductionDetailsFragment"
+        android:label="DeductionDetailsFragment"
+        tools:layout="@layout/deduction_details_fragment">
+        <argument
+            android:name="deduction"
+            app:argType="in.ac.bits_hyderabad.swd.swd.data.Deduction" />
+        <action
+            android:id="@+id/action_deductionDetailsFragment_to_deductionsFragment"
+            app:destination="@id/deductionsFragment"
+            app:popUpTo="@id/deductionDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.DocumentsFragment"
+        android:label="DocumentsFragment" />
+    <fragment
+        android:id="@+id/outstationFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.outstation.OutstationFragment"
+        android:label="outstation_fragment"
+        tools:layout="@layout/outstation_fragment">
+        <action
+            android:id="@+id/action_outstationFragment_to_requestOutstationFragment"
+            app:destination="@id/requestOutstationFragment"
+            app:popUpTo="@id/outstationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestOutstationFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.outstation.RequestOutstationFragment"
+        android:label="request_outstation_fragment"
+        tools:layout="@layout/request_outstation_fragment">
+        <action
+            android:id="@+id/action_requestOutstationFragment_to_outstationFragment"
+            app:destination="@id/outstationFragment"
+            app:popUpTo="@id/requestOutstationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/applyForMcnFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.mcn.ApplyForMcnFragment"
+        android:label="ApplyForMcnFragment"
+        tools:layout="@layout/mcn_apply_fragment">
+        <action
+            android:id="@+id/action_applyForMcnFragment_to_mcnStatusFragment"
+            app:destination="@id/mcnStatusFragment"
+            app:popUpTo="@id/mcnStatusFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/counsellorBookingFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.counsellorbooking.CounsellorBookingFragment"
+        android:label="CounsellorBookingFragment"
+        tools:layout="@layout/counsellor_booking_fragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.HomeFragment"
+        android:label="ImportantLinksFragment" />
+    <fragment
+        android:id="@+id/mcnStatusFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.mcn.McnStatusFragment"
+        android:label="mcn_status_fragment"
+        tools:layout="@layout/mcn_status_fragment">
+        <action
+            android:id="@+id/action_mcnStatusFragment_to_applyForMcnFragment"
+            app:destination="@id/applyForMcnFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqsGroupsFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.faqs.FaqsGroupsFragment"
+        android:label="FaqsGroupsFragment"
+        tools:layout="@layout/faqs_groups_fragment">
+        <action
+            android:id="@+id/action_faqsGroupsFragment_to_faqsGroupDataFragment"
+            app:destination="@id/faqsGroupDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqsGroupDataFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.faqs.FaqsGroupDataFragment"
+        android:label="FaqsGroupDataFragment"
+        tools:layout="@layout/fragment_faqs_group_data">
+        <argument
+            android:name="groupIndex"
+            app:argType="integer" />
+        <argument
+            android:name="questionNumber"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/officialConnectFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.officialconnect.OfficialConnectFragment"
+        android:label="OfficialConnectFragment"
+        tools:layout="@layout/official_connect_fragment" />
+    <fragment
+        android:id="@+id/kyaFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.kya.KyaGroupsFragment"
+        android:label="KyaFragment"
+        tools:layout="@layout/kya_groups_fragment">
+        <action
+            android:id="@+id/action_kyaFragment_to_generalFragment"
+            app:destination="@id/generalFragment" />
+        <action
+            android:id="@+id/action_kyaFragment_to_minorsFragment"
+            app:destination="@id/minorsFragment" />
+        <action
+            android:id="@+id/action_kyaFragment_to_kyaDepartmentsFragment"
+            app:destination="@id/kyaDepartmentsFragment" />
+        <action
+            android:id="@+id/action_kyaFragment_to_courseYearsFragment"
+            app:destination="@id/courseYearsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generalFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.kya.GeneralFragment"
+        android:label="GeneralFragment"
+        tools:layout="@layout/fragment_kya_general" />
+    <fragment
+        android:id="@+id/minorsFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.kya.MinorsFragment"
+        android:label="MinorsFragment"
+        tools:layout="@layout/fragment_kya_minors" />
+    <fragment
+        android:id="@+id/kyaDepartmentsFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.kya.KyaDepartmentsFragment"
+        android:label="KyaDepartmentsFragment"
+        tools:layout="@layout/fragment_kya_departments">
+        <action
+            android:id="@+id/action_kyaDepartmentsFragment_to_kyaDepartmentsDataFragment"
+            app:destination="@id/kyaDepartmentsDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseYearsFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.kya.CourseYearsFragment"
+        android:label="CourseYearsFragment"
+        tools:layout="@layout/fragment_kya_years">
+        <action
+            android:id="@+id/action_courseYearsFragment_to_yearGuidesFragment"
+            app:destination="@id/yearGuidesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yearGuidesFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.kya.YearGuidesFragment"
+        android:label="YearGuidesFragment"
+        tools:layout="@layout/fragment_year_course_guides">
+        <argument
+            android:name="year"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/kyaDepartmentsDataFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.more.kya.KyaDepartmentsDataFragment"
+        android:label="KyaDepartmentsDataFragment">
+        <argument
+            android:name="department"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticesFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.NoticesFragment"
+        android:label="NoticesFragment" />
+    <fragment
+        android:id="@+id/cabSharingFragment"
+        android:name="in.ac.bits_hyderabad.swd.swd.view.cabsharing.CabSharingFragment"
+        android:label="Cab Sharing"/>
+
+</navigation>

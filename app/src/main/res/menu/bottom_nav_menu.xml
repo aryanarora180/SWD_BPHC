@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/nav_menu_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/noticesFragment"
+            android:checked="true"
+            android:icon="@drawable/outline_event_24"
+            android:title="@string/notices" />
+
+        <item
+            android:id="@+id/messMenuFragment"
+            android:icon="@drawable/outline_mess_24"
+            android:title="@string/title_mess" />
+
+        <item
+            android:id="@+id/connectFragment"
+            android:icon="@drawable/outline_connect_24"
+            android:title="@string/contact_student_representatives" />
+
+        <item
+            android:id="@+id/officialConnectFragment"
+            android:icon="@drawable/outline_connect_24"
+            android:title="@string/contact_officials" />
+
+<!--        <item-->
+<!--            android:id="@+id/cabSharingFragment"-->
+<!--            android:icon="@drawable/outline_emoji_events_24"-->
+<!--            android:title="@string/cab_sharing" />-->
+
+        <item
+            android:id="@+id/faqsGroupsFragment"
+            android:icon="@drawable/outline_question_answer_24"
+            android:title="@string/faqs" />
+
+        <item
+            android:id="@+id/kyaFragment"
+            android:icon="@drawable/outline_school_24"
+            android:title="@string/kya" />
+
+        <item
+            android:id="@+id/mcnStatusFragment"
+            android:icon="@drawable/outline_emoji_events_24"
+            android:title="@string/mcn_scholarship" />
+
+        <item
+            android:id="@+id/documentsFragment"
+            android:icon="@drawable/outline_description_24"
+            android:title="@string/documents" />
+
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/outline_account_24"
+            android:title="@string/profile" />
+
+        <!--TODO: Uncomment out to enable usage after college reopens (f) -->
+<!--        <item-->
+<!--            android:id="@+id/goodiesFragment"-->
+<!--            android:icon="@drawable/outline_goodies_24"-->
+<!--            android:title="@string/title_goodies" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/deductionsFragment"-->
+<!--            android:icon="@drawable/outline_attach_money_24"-->
+<!--            android:title="@string/deductions" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/outstationFragment"-->
+<!--            android:icon="@drawable/outline_airport_shuttle_24"-->
+<!--            android:title="@string/outstation" />-->
+
+<!--        <item-->
+<!--            android:id="@+id/counsellorBookingFragment"-->
+<!--            android:icon="@drawable/outline_psychology_24"-->
+<!--            android:title="@string/book_a_counsellor" />-->
+    </group>
+</menu>

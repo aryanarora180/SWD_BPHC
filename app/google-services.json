@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "961006653268",
+    "firebase_url": "https://swdandroidapp.firebaseio.com",
+    "project_id": "swdandroidapp",
+    "storage_bucket": "swdandroidapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961006653268:android:6e69265d4a740df98002c1",
+        "android_client_info": {
+          "package_name": "in.ac.bits_hyderabad.swd.swd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "961006653268-2cjen0geg44o24vtdo1b78n4igpleijv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.ac.bits_hyderabad.swd.swd",
+            "certificate_hash": "47aa7f3be8f3474447e497ca0bf8cff17c0b6e68"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDzXgqpUDbeyfZ8doLVAIPqpSEWmKDFzY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "961006653268-qevln9qnigjef6qa3jiovcggij64p0sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
